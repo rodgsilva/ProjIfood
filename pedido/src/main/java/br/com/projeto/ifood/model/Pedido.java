@@ -1,5 +1,6 @@
 package br.com.projeto.ifood.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import io.quarkus.mongodb.panache.MongoEntity;
@@ -9,7 +10,7 @@ import io.quarkus.mongodb.panache.PanacheMongoEntity;
 public class Pedido  extends PanacheMongoEntity{
 	
 	private String cliente;
-	private List<Prato> prato;
+	private List<Prato> prato=new ArrayList<>();
 	private Restaurante restaurante;
 	private String entregador;
 	private Localizacao localizacaoEntregador;
